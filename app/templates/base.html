@@ -1,0 +1,13 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>CWCO Data Entry</title>
+    {% endif %}
+  </head>
+  <body>
+    {% block navbar %}{% endblock %}
+    {% block content %}{% endblock %}
+  </body>
+</html>

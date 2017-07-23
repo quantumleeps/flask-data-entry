@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<a href="/data">Enter Data</a><br>
+<a href="/locations">Modify Collection Sites</a><br>
+<a href="/accounts">Manage Account</a><br>
+<a href="/appsetup">Manage App</a><br>
+<br>
+{% if loggedin %}
+    Logged in as username
+    <a href="/logout">Click to Log Out</a>
+{% else %}
+    <a href="/login">Click to Login</a>
+{% endif %}
+{% endblock %}
